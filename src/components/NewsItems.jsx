@@ -1,9 +1,9 @@
 /* eslint-disable react/prop-types */
 
-const NewsItem = ({ title, description, imageUrl, newsUrl }) => {
+const NewsItems = ({ title, description, imageUrl, newsUrl }) => {
   return (
-    <div className="max-w-sm rounded overflow-hidden shadow-lg">
-      <img className="w-full" src={imageUrl || "https://via.placeholder.com/400x200"} alt="News" />
+    <div className="max-w-sm rounded overflow-hidden shadow-lg mx-auto">
+      <img className="w-full h-48 object-cover" src={imageUrl} alt="News" />
       <div className="px-6 py-4">
         <div className="font-bold text-xl mb-2">{title}</div>
         <p className="text-gray-700 text-base">
@@ -19,4 +19,4 @@ const NewsItem = ({ title, description, imageUrl, newsUrl }) => {
   );
 };
 
-export default NewsItem;
+export default NewsItems;
